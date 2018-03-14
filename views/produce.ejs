@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>产品展示</title>
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<style type="text/css">
+		body{
+		max-width: 100%;
+		min-width:1100px;
+		max-height:1300px;
+		min-height:800px;		 
+		}
+		.bg{
+			width:100%;
+			height:1300px;
+			background-color:#202020;
+			border:1px solid blue; 
+			position:relative;
+		}
+		.bottom{
+
+			position:absolute;
+			left:260px;
+			top:1100px;
+			margin-bottom:120px;
+		}
+		span{
+			color:#7F4624;
+			margin-bottom: 20px;
+		}
+		ul li{
+			list-style: none;
+			text-decoration: none;
+			float:left;
+		}
+		li{
+		
+			color:#A88C48;
+			float:left;
+		}
+		.tea li{
+			float:left;
+		}
+		.teaName li{
+			float:left;
+		}
+		.fl{
+			float:left;
+			margin-left:200px; 
+		}
+		.fr{
+			float:right;
+			margin-right:100px;
+		}
+		.nav-list li{
+			margin-left: 40px;
+		}
+		a{
+			text-decoration: none;
+			color:#A88C48;
+			font-weight: 800;
+		}
+		a :hover{
+			color:white;
+		}
+		.nav{
+			display:flex;
+			justify-content:space-around;
+		}
+		.list{
+			width:1000px; 
+			height:100px;
+			position:absolute;
+			top:310px;
+			left:230px;
+			margin-left:-134px;
+		}
+		.list li{
+			float:left;
+			padding-left:120px; 			
+		}
+		.list li a{
+			color:#CEA969; 
+			display: inline-block;
+			text-align:center;
+			width:100px;
+			height:60px;
+		}
+		.list li a:hover{
+			color:#fff;
+			background:url("imgs/bg.png") no-repeat;
+			background-size:100px 31px;
+			cursor:pointer;
+			display:block;
+			text-decoration:none;
+		}
+		#bgImg{
+			width:1200px;
+			height:1100px;
+			margin:0 auto;
+			position:absolute;
+			left:330px;
+			top:80px;
+			opacity: 0.5;
+		}
+		.tea{
+			width:1200px;
+			height:200px;
+			margin-left:100px; 
+			margin-top: 600px;
+		}
+		.tea li{
+			margin-left: 60px;
+		}
+		.tea img{
+			margin-top:-210px; 
+			width:180px;
+			height:180px;
+			padding-left:20px;   
+		}
+		.tea img:hover{
+			transition-duration:1s;
+			transform:rotateY(180deg);
+		}
+		.teaName{
+			position:absolute;
+			top:610px;
+			left:230px;
+			width:1200px;
+			height:20px;
+			margin-left:-150px;
+		}
+		.teaName li{
+			margin-left:60px; 
+			padding-left:100px;
+			margin-top: 50px; 
+		}
+		.pagination{
+			width:800px;
+			height:40px;
+			margin-bottom: -50px;
+			margin:0 auto;
+			border:1px solid white;
+			color:white;
+		}
+		.cp{
+			width:1100px;
+			height:500px;
+			position:absolute;
+			top:30px;
+			left:20px;
+			margin: 0 auto;
+		}		
+	</style>
+</head>
+<body>
+	<div class="bg">
+	<div class="nav">
+			<div class="logo"><img src="imgs/logo.png" ></div>
+			<div class="menu">
+				<ul class="nav-list">
+					<li><a href="/firstPage">网站首页</a></li>
+					<li><a href="/guanyuwomen">关于我们</a></li>
+					<li><a href="/produce">产品展示</a></li>
+					<li><a href="/news">新闻资讯</a></li>
+					<li><a href="/teaCulture">茶道知识</a></li>
+					<li><a href="/china">招商加盟</a></li>
+					<li><a href="/contaction">400-x00-8888</a></li>
+				</ul>
+			</div>
+		</div>	
+		<div style="position: relative;width: 1360px;height: 880px;margin: 0 auto;">
+	
+			<embed height="245" width="375" allowscriptaccess="always" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" quality="high" src="http://pml58393f.pic32.websiteonline.cn/upload/swfBg.swf" style="width: 1360px; height: 880px; margin:  0 auto; display: block;">
+	<div class="cp">	
+			<ul class="list">
+				<li><a href="#">经典红茶</a></li>
+				<li><a href="#">礼节拜访</a></li>
+				<li><a href="#">品质绿茶</a></li>
+				<li><a href="#">新品上市</a></li>
+			</ul>
+			<ul class="tea">
+				<li><a href="#"><img src="imgs/001.png"></a></li>
+				<li><a href="#"><img src="imgs/002.png"></a></li>
+				<li><a href="#"><img src="imgs/003.png"></a></li>
+				<li><a href="#"><img src="imgs/005.png"></a></li>
+			</ul>
+			<ul class="teaName">
+				<li>川和红</li>
+				<li>西湖龙井</li>
+				<li>真好喝红茶</li>
+				<li>真好喝绿茶</li>
+			</ul>
+
+			<div class="pagination">
+				<el-pagination
+				  small
+				  layout="prev, pager, next"
+				  :total="50">
+				</el-pagination>
+			</div>
+
+			
+		</div>
+			<div class="bottom">
+				<div class="fl">
+					<span>Copyright © 2009 - 2014 Cld , All Rights Reserved 酒业有限公司</span>
+					<span>版权所有</span>
+					<span> 陕ICP备1xxxxx17号</span>
+				</div>
+				<div class="fr">
+					<span>技术支持:网络科技</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	
+</body>
+</html>

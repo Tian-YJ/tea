@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	body{
+		max-width: 100%;
+		min-width:1100px;
+		max-height:1300px;
+		min-height:800px;		 
+		}
+		.bg{
+			width:100%;
+			height:1200px;
+			background-color:#202020;
+			border:1px solid blue; 
+			position:relative;
+		}
+		ul li{
+			list-style: none;
+			text-decoration: none;
+		}
+		li{
+			margin-left: 50px;
+			color:#A88C48;
+			float:left;
+		}
+		a{
+			text-decoration: none;
+			color:#A88C48;
+			font-weight: 800;
+		}
+		a :hover{
+			color:white;
+		}
+		.nav{
+			display:flex;
+			justify-content:space-around;
+		}
+		.nav-list li{
+			margin-left: 40px;
+		}
+		.container01{
+			position:relative;
+		}
+		.mg{
+			width:1000px;
+			height:800px;
+			margin-left: -500px;
+			position:absolute;
+			left:50%;
+			top:0px;
+			z-index: 1
+		}
+		.news_box{
+			position:absolute;
+			left:537px;
+			top:137px;
+		}
+		.dao_box{
+			position:absolute;
+			left:900px;
+			top:300px;
+		}
+		.join_box{
+			position:absolute;
+			left:718px;
+			top:506px;
+		}
+		.product_box{
+			position:absolute;
+			left:393px;
+			top:467px;
+		}
+		.zhiwo_box{
+			position:absolute;
+			left:78px;
+			top:255px;
+		}
+		.bottom{
+			position:absolute;
+			left:100px;
+			top:1150px;
+		}
+		span{
+			color:#7F4624;
+			margin-bottom: 20px;
+		}
+		.fl{
+			float:left;
+			margin-left:350px; 
+
+		}
+		.fr{
+			float:right;
+			margin-right:100px;
+		}
+		.moveImg{
+			margin:0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<div class="moveImg">
+			<!-- <embed id="bgImg" src="imgs/swfBg.swf"> -->
+		<div class="nav">
+			<div class="logo"><img src="imgs/logo.png" ></div>
+			<div class="menu">
+				<ul nav-list>
+					<li><a href="/firstPage">网站首页</a></li>
+					<li><a href="/guanyuwomen">关于我们</a></li>
+					<li><a href="/produce">产品展示</a></li>
+					<li><a href="/news">新闻资讯</a></li>
+
+					<li><a href="/teaCulture">茶道知识</a></li>
+					<li><a href="/china">招商加盟</a></li>
+					<li><a href="/contaction">400-x00-8888</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div style="position: relative;width: 1360px;height: 880px;">
+	
+			<embed height="245" width="375" allowscriptaccess="always" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" quality="high" src="http://pml58393f.pic32.websiteonline.cn/upload/swfBg.swf" style="width: 100%; height: 880px; display: block; position: absolute;top:0;left:50%;margin-left:-440px;z-index: 0;">
+
+			<div class="container01">
+
+			<div class="mg">
+				<a href="#" class="news_box" style="position:relative;">
+					<div class="newsHidden" style="position: absolute;display:none;">
+						<img src="imgs/news-h_e1lb.png">					
+					</div>
+					<div class="news"  style="position: absolute;">
+						<img src="imgs/news.png">
+					</div>
+				</a>
+
+				<a href="#" class="dao_box" style="position:relative;">
+					<div class="newsHidden" style="position: absolute;display:none;">
+						<img src="imgs/dao-h_jj0m.png">
+					</div>
+					<div class="news"  style="position: absolute;">
+						<img src="imgs/dao.png">
+					</div>
+				</a>
+
+				<a href="#" class="join_box" style="position:relative;">
+					<div class="newsHidden" style="position: absolute;display:none;">
+						<img src="imgs/join-h_i3sr.png">
+					</div>
+					<div class="news"  style="position: absolute;">
+						<img src="imgs/join.png">
+					</div>
+				</a>
+
+				<a href="#" class="product_box" style="position:relative;">
+					<div class="newsHidden" style="position: absolute;display:none;">
+						<img src="imgs/product-h_vxae.png">
+					</div>
+					<div class="news"  style="position: absolute;">
+						<img src="imgs/product.png">
+					</div>
+				</a>
+
+				<a href="#" class="zhiwo_box" style="position:relative;">
+					<div class="newsHidden" style="position: absolute;display:none;">
+						<img src="imgs/zhiwo1.png">
+					</div>
+					<div class="news"  style="position: absolute;">
+						<img src="imgs/zhiwo.png">
+					</div>
+				</a>
+			</div>
+			</div>
+		
+		</div>
+	</div>
+	<div class="bottom">
+			<div class="fl">
+				<span>Copyright © 2009 - 2014 Cld , All Rights Reserved 酒业有限公司</span>
+				<span>版权所有</span>
+				<span> 陕ICP备1xxxxx17号</span>
+			</div>
+			<div class="fr">
+					<span>技术支持:网络科技</span>
+			</div>
+	</div>	
+</div>
+<script src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+	
+		$('.container01 a').each(function(){
+			$(this).mouseover(function(){
+				$(this).children('.newsHidden').eq(0).show();
+				$(this).children('.news').eq(0).hide();
+			});
+		});
+
+		$('.container01 a').each(function(){
+			$(this).mouseout(function(){
+				$(this).children('.newsHidden').eq(0).hide();
+				$(this).children('.news').eq(0).show();
+			});
+		});
+	});
+</script>	
+</body>
+</html>

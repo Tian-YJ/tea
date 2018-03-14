@@ -1,0 +1,11 @@
+
+node+ejs项目操作流程：
+步骤1：静态页面转换为ejs文件
+步骤2：搭建node环境：	npm init 初始化node
+						npm i express --save    	(install)
+						npm i bootstrap --save		安装插件
+						npm i axios --save
+						npm i session --save		session插件 搭建session环境存储数据
+						npm i ejs --save			安装ejs模块
+						npm i mongoose --save		安装数据库
+						node index					启动项目		

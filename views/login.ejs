@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<style type="text/css">
+		.outer{
+			width:600px;
+			height:400px;
+			border-radius: 8px;
+			margin:0 auto;
+			background-color:rgba(137,190,221, 0.1),(186,217,235,0.1);
+		}
+		.database{
+			margin:0 auto;
+			background-color: rgba(137,190,221),(217,217,217);
+			background-color:gray; 
+			border-radius: 8px;
+		}
+		h1{
+			margin:0 auto;
+			color:green;
+		}
+		#box{
+			border-radius:8px;
+			margin-left: 280px;
+			margin-top: 30px;
+		}
+		.input{
+			width:300px;
+			height:300px;
+			margin:0 auto;
+		}
+		.input1{
+			width:300px;
+			height:50px;
+			border-radius:6px;
+		}
+		.input2{
+			width:300px;
+			height:50px;
+			border-radius:6px;
+		}
+		a :hover{
+			text-decoration:none;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="database">
+			<h1>茶叶订单管理系统</h1>
+			<div class='input'>
+				姓名:<input type="text" placeholder="请输入姓名" class="input1">
+				密码：<input type="text" placeholder="请输入密码" class="input2">
+			</div>
+			<div id="box">
+				  <el-button type="primary">登录</el-button>
+				  <el-button type="primary"><a href="./reg">注册</a></el-button>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<script type="text/javascript">
+
+		new Vue({
+		el: '#box',
+		data: function() {
+		return { visible: false}
+		    }
+		})
+	</script>
+		
+</body>
+</html>
